@@ -355,3 +355,245 @@
     border-radius: 16px;
   }
 }
+
+.produtosSection {
+  padding: 50px 8%;
+}
+
+.produtosSection h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #062b63;
+}
+
+.produtosSection > p {
+  color: #777;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.produtosGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.produtoCard {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 20px;
+  background: white;
+  transition: 0.2s;
+}
+
+.produtoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.produtoImagem {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.produtoCard p {
+  margin-top: 10px;
+  color: #65749a;
+}
+
+.produtoCard h3 {
+  margin: 4px 0;
+  color: #062b63;
+}
+
+.produtoCard strong {
+  display: block;
+  font-size: 20px;
+  color: #062b63;
+}
+
+.produtoCard button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+
+  background-color: #ffbd00;
+  color: #062b63;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  transition: 0.2s;
+}
+
+.produtoCard button:hover {
+  background-color: #eaaa00;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  /* Produtos em destaque */
+
+  .produtosSection {
+    padding: 35px 20px;
+  }
+
+  .produtosSection h2 {
+    font-size: 24px;
+  }
+
+  .produtosGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .produtoImagem {
+    height: 200px;
+  }
+
+  /* Footer */
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .footerLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footerSocial {
+    justify-content: center;
+  }
+
+  .footerCopyright {
+    text-align: center;
+  }
+}
+
+.footer {
+  background-color: #062b63;
+  color: white;
+  padding: 40px 6%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerLogo svg {
+  color: #ffbd00;
+  font-size: 38px;
+}
+
+.footerLogo h2 {
+  margin: 0;
+  font-size: 34px;
+  color: #ffbd00;
+}
+
+.footerLogo h2 span {
+  color: white;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footerLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.footerLinks a:hover {
+  color: #ffbd00;
+}
+
+.footerLinks span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footerSocial {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footerSocial a {
+  width: 38px;
+  height: 38px;
+
+  background-color: white;
+  color: #062b63;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 19px;
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.footerSocial a:hover {
+  background-color: #ffbd00;
+  transform: translateY(-2px);
+}
+
+.footerCopyright p {
+  margin: 2px 0;
+  font-size: 13px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .footerLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footerSocial {
+    justify-content: center;
+  }
+
+  .footerCopyright {
+    text-align: center;
+  }
+}
