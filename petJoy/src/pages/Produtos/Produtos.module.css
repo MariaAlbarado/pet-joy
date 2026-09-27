@@ -1,0 +1,36 @@
+.container {
+  padding: 40px;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nome {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.categoria {
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.preco {
+  font-size: 20px;
+  font-weight: bold;
+}
